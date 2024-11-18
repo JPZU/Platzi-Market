@@ -35,7 +35,7 @@ CREATE TABLE productos(
 CREATE TABLE clientes(
 	id VARCHAR(20) PRIMARY KEY,
     nombre VARCHAR(40),
-    apellidos VARCHAR(100),
+    apellido VARCHAR(100),
     celular DECIMAL,
 	direccion VARCHAR(80),
     correo_electronico VARCHAR(70)
