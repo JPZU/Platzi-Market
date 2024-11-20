@@ -19,7 +19,7 @@ CREATE TABLE categorias(
 );
 
 CREATE TABLE productos(
-	id_producto INT PRIMARY KEY,
+	id_producto INT PRIMARY KEY AUTO_INCREMENT,
     nombre VARCHAR(45),
     id_categoria INT,
     codigo_barras VARCHAR(150),

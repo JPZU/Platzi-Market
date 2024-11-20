@@ -27,7 +27,7 @@ public class Compra {
     private Cliente cliente;
 
 //    Compra-ComprasProducto
-    @OneToMany(mappedBy = "producto")
+    @OneToMany(mappedBy = "compra")
     private List<ComprasProducto> productos;
 
     public String getComentario() {

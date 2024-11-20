@@ -20,7 +20,15 @@ public class Producto {
     private Integer cantidadStock;
     private Boolean estado;
 
-//    Relaciones
+    public Categoria getCategoria() {
+        return categoria;
+    }
+
+    public void setCategoria(Categoria categoria) {
+        this.categoria = categoria;
+    }
+
+    //    Relaciones
     @ManyToOne
     @JoinColumn(name = "id_categoria", insertable = false, updatable = false)
     private Categoria categoria;
