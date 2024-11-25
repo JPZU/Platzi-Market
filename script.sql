@@ -42,7 +42,7 @@ CREATE TABLE clientes(
 );
 
 CREATE TABLE compras(
-	id_compra INT PRIMARY KEY,
+	id_compra INT PRIMARY KEY AUTO_INCREMENT,
     id_cliente VARCHAR(20),
     fecha DATETIME,
     medio_pago CHAR(1),

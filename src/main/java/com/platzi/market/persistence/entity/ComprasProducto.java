@@ -34,7 +34,6 @@ public class ComprasProducto {
 
     @ManyToOne
     @JoinColumn(name = "id_producto", insertable = false, updatable = false)
-    @MapsId("idProducto")
     private Producto producto;
 
     public Integer getCantidad() {
