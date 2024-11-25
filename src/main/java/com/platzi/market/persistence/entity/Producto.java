@@ -20,6 +20,7 @@ public class Producto {
     private Integer cantidadStock;
     private Boolean estado;
 
+
     public Categoria getCategoria() {
         return categoria;
     }

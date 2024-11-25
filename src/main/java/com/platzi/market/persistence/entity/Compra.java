@@ -18,7 +18,7 @@ public class Compra {
     @Column(name = "medio_pago")
     private Character medioPago;
     private String comentario;
-    private Character estado;
+    private String estado;
 
 //    Relaciones
 //    Compra-Cliente
@@ -27,8 +27,24 @@ public class Compra {
     private Cliente cliente;
 
 //    Compra-ComprasProducto
-    @OneToMany(mappedBy = "compra")
+    @OneToMany(mappedBy = "compra", cascade = {CascadeType.ALL})
     private List<ComprasProducto> productos;
+
+    public Cliente getCliente() {
+        return cliente;
+    }
+
+    public void setCliente(Cliente cliente) {
+        this.cliente = cliente;
+    }
+
+    public List<ComprasProducto> getProductos() {
+        return productos;
+    }
+
+    public void setProductos(List<ComprasProducto> productos) {
+        this.productos = productos;
+    }
 
     public String getComentario() {
         return comentario;
@@ -38,11 +54,11 @@ public class Compra {
         this.comentario = comentario;
     }
 
-    public Character getEstado() {
+    public String getEstado() {
         return estado;
     }
 
-    public void setEstado(Character estado) {
+    public void setEstado(String estado) {
         this.estado = estado;
     }
 

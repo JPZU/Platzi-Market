@@ -9,23 +9,23 @@ import java.io.Serializable;
 public class ComprasProductoPK implements Serializable {
 
     @Column(name = "id_compra")
-    private Integer IdCompra;
+    private Integer idCompra;
     @Column(name = "id_producto")
-    private Integer IdProducto;
+    private Integer idProducto;
 
     public Integer getIdCompra() {
-        return IdCompra;
+        return idCompra;
     }
 
     public void setIdCompra(Integer idCompra) {
-        IdCompra = idCompra;
+        idCompra = idCompra;
     }
 
     public Integer getIdProducto() {
-        return IdProducto;
+        return idProducto;
     }
 
     public void setIdProducto(Integer idProducto) {
-        IdProducto = idProducto;
+        idProducto = idProducto;
     }
 }
