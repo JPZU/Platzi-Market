@@ -10,7 +10,7 @@ public class Cliente {
 
     @Id
     @Column(name = "id")
-    private Integer idCliente;
+    private String idCliente;
     private String nombre;
     private String apellido;
     private Long celular;
@@ -53,11 +53,11 @@ public class Cliente {
         this.direccion = direccion;
     }
 
-    public Integer getIdCliente() {
+    public String getIdCliente() {
         return idCliente;
     }
 
-    public void setIdCliente(Integer idCliente) {
+    public void setIdCliente(String idCliente) {
         this.idCliente = idCliente;
     }
 

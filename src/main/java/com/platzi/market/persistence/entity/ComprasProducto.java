@@ -28,12 +28,13 @@ public class ComprasProducto {
     }
 
     @ManyToOne
-    @MapsId("IdCompra")
     @JoinColumn(name = "id_compra", insertable = false, updatable = false)
+    @MapsId("idCompra")
     private Compra compra;
 
     @ManyToOne
     @JoinColumn(name = "id_producto", insertable = false, updatable = false)
+    @MapsId("idProducto")
     private Producto producto;
 
     public Integer getCantidad() {
