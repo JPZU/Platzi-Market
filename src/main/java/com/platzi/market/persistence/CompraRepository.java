@@ -6,7 +6,6 @@ import com.platzi.market.persistence.crud.CompraCrudRepository;
 import com.platzi.market.persistence.entity.Compra;
 import com.platzi.market.persistence.mapper.PurchaseMapper;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
